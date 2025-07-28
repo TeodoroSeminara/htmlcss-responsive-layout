@@ -22,7 +22,7 @@ h2 {
 
 h3 {
     font-weight: 400;
-    font-size: 2.2rem;
+    font-size: 2.0rem;
     margin-top: 2rem;
 }
 
@@ -58,6 +58,7 @@ img {
     width: 10%;
     border-bottom: 2px solid #F7972E;
 }
+
 /* Header */
 
 header {
@@ -110,11 +111,26 @@ ul {
     padding-bottom: 1rem;
 }
 
+/* Link */
 #link {
     margin-top: 2rem;
-    /* Debug */
-    background-color: rgb(212, 255, 0);
-    height: 50px;
+    text-align: center;
+}
+
+#link ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#link a {
+    text-decoration: none;
+    color: black;
+    margin-top: 1rem;
+    border-radius: 25px;
+    padding: 0.5rem 1.6rem;
+    box-shadow: 2px 2px 10px gray;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
 }
 
 /* Banner */
@@ -156,6 +172,7 @@ article img {
 #contact a {
     padding: 0.4rem;
     color: #fff;
+    font-size: 0.8rem;
 }
 
 /* Table Version */
@@ -174,6 +191,16 @@ article img {
         display: block;
         text-align: center;
     }
+
+    #link a {
+        font-size: 1.0rem;
+        margin: 0 0.5rem;
+        padding: 0.5rem 3rem;
+    }
+
+    .social-none {
+        display: none;
+    }
 }
 
 /* Mobile Version */
@@ -190,5 +217,9 @@ article img {
 
     .mobile-none {
         display: none;
+    }
+
+    #link a {
+        padding: 0.7rem 1rem;
     }
 }
