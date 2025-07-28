@@ -9,19 +9,25 @@
 
 :root {
     font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #F6F5F3;
     margin: 0 auto;
 }
 
 h2 {
     color: #7C69A4;
-    margin-top: 0.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin-top: 2rem;
 }
 
 h4 {
     padding-bottom: 1.8rem;
-
 }
 
 .bold {
@@ -35,6 +41,22 @@ address {
 
 img {
     max-width: 100%;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.box-shadow {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.hr-line {
+    margin-top: 1rem;
+    width: 10%;
+    border-bottom: 2px solid #F7972E;
 }
 /* Header */
 
@@ -51,11 +73,13 @@ header {
 ul {
     list-style-type: none;
 }
+
 /* Main */
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+    max-width: 1280px;
 }
 
 #top-video {
@@ -76,21 +100,21 @@ ul {
 
 
 .recipe-info {
-    width: 30%;
+    width: 40%;
     padding-left: 0.5rem;
     background-color: #fff;
     padding: 1.2rem;
 }
 
-.recipe-info li{
+.recipe-info li {
     padding-bottom: 1rem;
 }
 
 #link {
     margin-top: 2rem;
     /* Debug */
-    /* background-color: rgb(212, 255, 0);
-    height: 50px; */
+    background-color: rgb(212, 255, 0);
+    height: 50px;
 }
 
 /* Banner */
@@ -104,9 +128,13 @@ ul {
 
 #recipe-story {
     margin-top: 2rem;
-    /* Debug */
-    /* background-color: rgb(79, 79, 79);
-    height: 300px; */
+}
+
+article img {
+    max-width: 25%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -126,8 +154,8 @@ ul {
 }
 
 #contact a {
-        padding: 0.4rem;
-        color: #fff;
+    padding: 0.4rem;
+    color: #fff;
 }
 
 /* Table Version */
@@ -136,6 +164,10 @@ ul {
 
     #recipe {
         display: block;
+    }
+
+    .recipe-info {
+        width: 100%;
     }
 
     #contact {
@@ -153,7 +185,7 @@ ul {
     }
 
     .container {
-        width: 100%;
+        width: 90%;
     }
 
     .mobile-none {
